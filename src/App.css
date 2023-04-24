@@ -1,0 +1,84 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  background-color: rgb(26, 24, 65);
+  margin: 0;
+}
+
+.App-header {
+  flex-basis: 66.666%;
+  flex-grow: 1;
+  text-align: center;
+  background-color: rgb(19, 16, 67);
+  color: white;
+  padding: 20px;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5;
+}
+
+.App-body {
+  flex-basis: 33.333%;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #ececec;
+  text-align: center;
+}
+
+.App-body .container {
+  text-align: center;
+  margin: 5em;
+  padding: 1% 2%;
+}
+
+.App-footer {
+  flex: 0 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: Black;
+}
+.btn {
+  display: inline-block;
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(19, 16, 67);
+  color: white;
+}
+
+.btn:active {
+  background-color: #333;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .App {
+    flex-direction: row;
+  }
+
+  .App-header,
+  .App-footer {
+    flex: 0 0 20%;
+  }
+
+  .App-body {
+    flex: 1 0 60%;
+    justify-content: flex-start;
+  }
+
+  .App-body .container {
+    margin: 2em;
+  }
+}
